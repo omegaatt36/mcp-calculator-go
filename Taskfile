@@ -1,0 +1,15 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - go build -o mcp-calculator-go
+    silent: true
+  deps:
+    cmds:
+      - go install github.com/abice/go-enum@latest
+    silent: true
+  enum:
+    cmds:
+      - go generate ./...
+    silent: true
