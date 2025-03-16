@@ -40,35 +40,32 @@ task build
 ## How to use
 
 1. build mcp binary
-
 2. configure
 
-2-1. VS Code and Client:
-
-```json
-{
-  "mcpServers": {
-    "calculator-go": {
-      "command": "/path/to/mcp-calculator-go",
-      "args": [],
-      "disabled": false,
-      "autoApprove": []
+  - VS Code and Client:
+  ```json
+  {
+    "mcpServers": {
+      "calculator-go": {
+        "command": "/path/to/mcp-calculator-go",
+        "args": [],
+        "disabled": false,
+        "autoApprove": []
+      }
     }
   }
-}
-```
+  ```
 
-2-2. Zed
-
-```json
-"context_servers": {
-  "calculator-go": {
-    "command": {
-      "path": "/path/to/mcp-calculator-go",
-      "args": [],
-      "env": {}
-    },
-    "settings": {}
+  - Zed
+  ```json
+  "context_servers": {
+    "calculator-go": {
+      "command": {
+        "path": "/path/to/mcp-calculator-go",
+        "args": [],
+        "env": {}
+      },
+      "settings": {}
+    }
   }
-}
-```
+  ```
