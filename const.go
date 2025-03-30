@@ -4,5 +4,5 @@ package main
 // ENUM(add, sub, mul, div)
 type Operation string
 
-// ENUM(x, y)
+// ENUM(op, x, y)
 type Argument string

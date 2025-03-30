@@ -12,6 +12,8 @@ import (
 )
 
 const (
+	// ArgumentOp is a Argument of type op.
+	ArgumentOp Argument = "op"
 	// ArgumentX is a Argument of type x.
 	ArgumentX Argument = "x"
 	// ArgumentY is a Argument of type y.
@@ -33,8 +35,9 @@ func (x Argument) IsValid() bool {
 }
 
 var _ArgumentValue = map[string]Argument{
-	"x": ArgumentX,
-	"y": ArgumentY,
+	"op": ArgumentOp,
+	"x":  ArgumentX,
+	"y":  ArgumentY,
 }
 
 // ParseArgument attempts to convert a string to a Argument.
